@@ -1,0 +1,798 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&family=Nunito&family=Nunito+Sans:wght@400;600;900&display=swap');
+/* font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Nunito', sans-serif; */
+
+
+Указываем box sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+section .header{
+    margin-bottom: 100px;
+}
+
+.header{
+    margin-bottom: 300px;
+}
+.section_header{
+    padding: 52px 0 52px 0;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}    
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu_and_regitsr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.nav_menu{
+    display: flex;
+    flex-direction: row;
+}
+.menu_item{
+    margin-right: 48px;
+    list-style: none;
+}
+.menu_item,
+.reg_button{
+    font-size: 20px;
+    color: #bab8b8;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+}
+.reg_button{
+    padding: 12px 32px;
+    border: 3px solid #3984f3;
+    background-color: #fff;
+    color: #3984f3;
+}
+.reg_button:hover{
+    border: 3px solid #3984f3;
+    background-color: #0062f3;
+    color: #fff;
+}
+.header_body_content{
+    width: 428px;
+}
+.title{
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(9, 30, 64);
+    font-weight: 900;
+    line-height: 1.067;
+}
+.header_body_description{
+    margin: 55px 0 72px 0;
+}
+.header_body_description p{
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(129, 133, 142);
+    line-height: 1.591;
+}
+.body_reg_btn{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    border: 0;
+    background-color: #3984f3;
+    padding: 13.68px 32px;
+    cursor: pointer;
+}
+.body_reg_btn:hover{
+    background-color: #0062f3;
+}
+.header_body_img{
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+.header_body_img img{
+    height: 500px;
+    width: auto;
+}
+.solitary_bush{
+    position: absolute;
+    left: 0;
+}
+.solitary_bush img{
+    height: 238px;
+    width: auto;
+}
+
+/* 2 секция  */
+.vouchers{
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.vouchers_block{
+    display: flex;
+    justify-content: space-between;
+    margin-right:100px;
+}
+
+.wrapper_slide{
+    overflow: hidden;
+}
+
+.slider_voucher{
+    display: flex;
+    position: relative;
+    height: 350px;
+    margin-left: 20px;
+}
+
+.slider_voucher .active{
+    display: flex;
+    /* margin-bottom: 29px; */
+}
+
+.wrap_item_voucher{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 15px;
+    width: 216px;
+}
+
+.wrap_item_voucher:last-child{
+    margin-right: 0;
+}
+
+
+
+.item_voucher{
+    position: relative;
+    width: 216px;
+    height: auto;
+}
+
+.item_voucher:last-child{
+    margin-right:0;
+}
+
+.wrapper_voucher{
+    width:100%;
+}
+
+.price_voucher{
+    position: absolute;
+    top:15px;
+    font-size: 14px;
+    color: #fff;
+    display: inline;
+    padding: 3px 12px;
+    background-color: #3984f3;
+}
+.place_of_stay{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 20px;
+}
+.item_name{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.content_vouchers{
+    width: 500px;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.stars_rating{
+    display: flex;
+    flex-direction: row;
+}
+
+.star{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.star:last-child{
+    margin-right: 0;
+}
+
+.tour{
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.arrow_slider{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.arrow_left,
+.arrow_right{
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/*  СИНЯЯ ЛИНИЯ ПОД ЗАГОЛОВКОМ  */
+
+.dash{
+    width:60px;
+    height: 3px;
+    background-color: #3984f3;
+}    
+.dash_wrap{
+    display: inline-block;
+    margin: 30px auto;
+}
+
+
+/*  блок с видео  */
+.overview_of_places{
+    margin-bottom: 150px;
+}
+
+.content_overview{
+    text-align: center;
+}
+.video_slider{
+    display: flex;
+    justify-content: center;
+}
+.list_video{
+    width: 450px;
+    height: 355px;
+    margin-left: 30px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.list_video ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item_slide{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.list_video .active{
+    background-color: #f0f0f0;
+}
+
+.name_video{
+    font-size: 20px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(9, 30, 64);
+    font-weight: 600;
+}
+
+.time_video{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgba(9, 30, 64, 0.702);
+}
+
+.info_of_video{
+    margin-left: 15px;
+}
+
+/*  СЕКЦИЯ КАТЕГОРИЙ ПУТЕШЕСТВИЙ  */
+.travel_categories{
+    margin-bottom: 150px;
+}
+
+.wrap_slider_travel{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.available_categories{
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.item_category{
+    position: relative;
+    /* margin-right: 15px; */
+}
+.item_category:last-child{
+    margin-right:0;
+}
+.img_category{
+    width: 300px;
+    height: auto;
+}
+.video_block{
+    display: block;
+    width: 632px;
+    height: auto;
+}
+.video_item{
+    display: block;
+    width: 197px;
+    height: auto;
+}
+.name_category{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*  секция с путешествинниками  */
+.travel_experience{
+    margin-bottom: 150px;
+}
+
+.wrap_slider_travellers{
+    display: flex;
+    justify-content: center;
+    /* width: 150px; */
+    /* overflow: hidden; */
+}
+
+.wrap_all_trevellers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 50px;
+}
+.limit_window{
+    width: 103.688px;
+    overflow: hidden;    
+}
+.all_trevellers{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider_travellers{
+    display: flex;
+    align-items: center;
+}
+.item_treveller{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 103.688px;
+}
+.item_treveller:last-child{
+    margin-right:0;
+}
+.img_treveller img{
+    border-radius: 100%;
+}
+.name_traveller{
+    font-family: 'Nunito', sans-serif;
+    font-size:20px;
+    font-weight: 600;
+    color: #2b323a;
+    margin: 30px 0 10px 0;
+}
+
+.occupation{
+    font-family: 'Nunito', sans-serif;
+    font-size:14px;
+    font-weight: 600;
+    color: #2b323a;
+}
+
+.wrpa_slide_order{
+    width: 130px;
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wrpa_slide_order .active{
+    width: 33px;
+    height:3px;
+    background-color:#3984f3;
+}
+.slide_order{
+    width: 3px;
+    height:3px;
+    background-color:#d4daf5;
+}
+
+
+/*   СЕКЦИЯ ДЛЯ ЗАКАЗА   */ 
+.we_will_see_you{
+    position: relative;
+}
+.background_block{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wrap_choice_the_travell{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrap_block_belies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block_belief{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.title_belief{
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.price_travell p{
+    font-size: 50px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.block_choice{
+    width: 1150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item_choice{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.item_choice_value{
+    
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.dstinations{
+    display: none;
+    height: 100%;
+}
+
+.item_choice .active{
+    height: 150px;
+    display: block;
+}
+
+.wrap_list_city,
+.package{
+    height: 150px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.list_item,
+.wrap_baggage li{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.wrap_plug{
+    height: 100%;
+}
+
+.item_choice_value p,
+.plug,
+.chosen_baggage p{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.wrap_plug::placeholder{
+    color: #fff;
+    ;
+}
+
+.choice{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.dates{
+    height: 100%;
+    overflow: hidden;
+}
+
+#calendar{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    outline: none;
+    border: 0px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+#calendar::placeholder{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    /* transform: translateX(-13%); */
+}
+
+.order{
+    padding: 10px 40px;
+    width: 100%
+}
+
+#item_choice_2{
+    display:block;
+    z-index: 100;
+}
+
+.wrap_package{
+    display:none;
+}
+
+.package ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.chosen_baggage{
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+}
+
+/*   FOOTER   */
+.footer{
+    margin: 40px 0;
+}
+
+.wrap_content{
+    margin:0 auto;
+}
+.resource{
+    width: 900px;
+    margin: 0 auto;
+}
+.resource ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link_resource{
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: rgb(43, 50, 58);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wrap_all_right{
+    margin-top: 30px;
+}
+
+.all_right{
+    display: flex;
+    justify-content: center;
+}
+
+.right_reseved{
+    font-size: 16px;
+}
+
+.name_site{
+    font-size: 16px;
+    color: #c6c6c6;
+    margin-left: 15px;
+}
+.wrap_feedback{
+    width: 300px;
+    margin: 30px auto 0 auto;
+}
+
+.feedback{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_feedback a{
+    text-decoration: none;
+}
+
+.item_feedback a img{
+    width: 50px;
+    height: 50px;
+}
+
+/*   MODAL WINDOW   */
+.modal{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.dark_range{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    z-index: 100;
+}
+.modal_window{
+    position: relative;
+    z-index: 101;
+    width: 460px;
+    border-radius: 50px;
+    background: #3984f3;
+    padding: 55px 25px 35px;
+}
+.modal_window.active{
+    animation: openThePopup 0.7s ease-out forwards;
+}
+.modal_close{
+    position: absolute;
+    top: -25px;
+    right: -19px;
+    border: 0px;
+    background-color: inherit;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.modal_close:hover{
+    opacity: 1;
+}
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_form{
+    height: 45px;
+    background-color: #69c0ef;
+    border: 3px solid #70f5f4;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+
+@keyframes openThePopup {
+    0% {
+        transform: scale(0.3);
+    }
+    50% {
+        transform: scale(1.3)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
