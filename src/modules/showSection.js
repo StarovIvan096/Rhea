@@ -5,9 +5,9 @@ const showSection = ()=> {
 
     const hideArrow = ()=> {
         window.addEventListener('scroll', ()=> {
-            if(window.scrollY < 550){
+            if(window.scrollY < 450){
                 arrowUp.style.display = 'none';
-            } else if(window.scrollY > 550){
+            } else if(window.scrollY > 650){
                 arrowUp.style.display = 'block';
             }
         }); 
