@@ -10,7 +10,7 @@ const playVideo = ()=> {
     const renderVideo = (link = 1)=> {
         const render = document.createElement('div');
         render.classList.add('another_video');
-        render.innerHTML = `<video src="./видео/${link}.mp4" class="video_block" controls></video>`;      
+        render.innerHTML = `<video src="./video/${link}.mp4" class="video_block" controls></video>`;      
 
         videoSlider.insertAdjacentElement('afterbegin', render);
     };
