@@ -2,12 +2,13 @@
 
 const showSection = ()=> {
     const arrowUp = document.querySelector('.arrow_up');
-
+    
     const hideArrow = ()=> {
         window.addEventListener('scroll', ()=> {
-            if(window.scrollY < 450){
+            
+            if(window.scrollY < 550){
                 arrowUp.style.display = 'none';
-            } else if(window.scrollY > 650){
+            } else if(window.scrollY > 850){
                 arrowUp.style.display = 'block';
             }
         }); 

@@ -103,6 +103,7 @@ html{
 .arrow_up{
     max-width: 100%;
     max-height: 100%;
+    display: none;
 }
 .section_header{
     position: fixed;
@@ -111,11 +112,11 @@ html{
     transform: translateX(-50%);
     width: 100%;
     padding: 20px 0;
-    background-color: #c61111;
+    background-color: #3984f3b3;
     z-index: 99;
 }
 .container{
-    width: 1150px;
+    width: 1400px;
     margin: 0 auto;
 }    
 .header_menu{
@@ -146,7 +147,7 @@ html{
 }
 .menu_item a,
 .reg_button{
-    color: #bab8b8;
+    color: #ffffff;
     font-family: 'Nunito', sans-serif;
     cursor: pointer;
     text-decoration: none;
